@@ -53,10 +53,11 @@
 		  <option value="4">Lisa Lalisa Manoban Blackpink Live performance (100 USD)</option>
 		</select>
     </div>
-	<div class="mb-3 mt-3">
-        <label for="ticknum" class="form-label">Number of tickets (max 5 tickets) <span style="color:red">*</span></label>
-        <input type="text" class="form-control" id="ticknum" name="ticknum"/>
-    </div>
+    <div class="mb-3 mt-3">
+      <label for="ticknum" class="form-label">Number of tickets <span style="color:red">*</span></label>
+      <input type="number" class="form-control" id="ticknum" name="ticknum" min="1" max="5" required />
+  </div>
+  
 	<div class="mb-3 mt-3">
         <label class="form-label">Collection method<span style="color:red">*</span></label>&nbsp;&nbsp;
         <input type="radio" class="form-check-input" id="collectRad1" name="collectRad" value="1" checked>&nbsp; E-Tickets &nbsp;&nbsp;
