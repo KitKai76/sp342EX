@@ -25,7 +25,49 @@
     </li>
   </ul>
   
+  
+  <form action="#" method="post" onsubmit="return validateForm()">
+    <div class="mb-3 mt-3">
+      <label for="nid" class="form-label">National ID<span style="color:red">*</span></label>
+      <input type="text" class="form-control" id="nid" name="nid" pattern="[0-9]{13}" title="Please enter a 13-digit number"/>
+  </div>
+  
+    <div class="mb-3 mt-3">
+        <label for="fname" class="form-label">First Name<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="fname" name="fname"/>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="lname" class="form-label">Last Name<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="lname" name="lname"/>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Gender<span style="color:red">*</span></label>&nbsp;&nbsp;
+        <input type="radio" class="form-check-input" id="gender1" name="genderRad" value="1" checked>&nbsp; Male &nbsp;&nbsp;
+		<input type="radio" class="form-check-input" id="gender2" name="genderRad" value="2">&nbsp; Female
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="event" class="form-label">Event<span style="color:red">*</span></label>
+        <select class="form-select" id="event" name="event">
+		  <option value="1">Kimi no nawa XD (91.25 USD)</option>
+		  <option value="4">Hololive world tour (100 USD)</option>
+		</select>
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="ticknum" class="form-label">Number of tickets <span style="color:red">*</span></label>
+      <input type="number" class="form-control" id="ticknum" name="ticknum" min="1" max="5" required />
+  </div>
+  
+	<div class="mb-3 mt-3">
+        <label class="form-label">Collection method<span style="color:red">*</span></label>&nbsp;&nbsp;
+        <input type="radio" class="form-check-input" id="collectRad1" name="collectRad" value="1" checked>&nbsp; E-Tickets &nbsp;&nbsp;
+		<input type="radio" class="form-check-input" id="collectRad2" name="collectRad" value="2">&nbsp; Ticket vending machine
+    </div>
+	
+    <button type="submit" class="btn btn-primary">Book</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+</form><br><br>
 </div>
+
 
 </body>
 </html>
